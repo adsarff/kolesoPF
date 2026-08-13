@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#08110f" />
+  <title>Игровое колесо</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">GAME RANDOMIZER</div>
+        <h1>Игровое колесо</h1>
+        <p class="subtitle">Выбери категорию и крути колесо — выпадет одна игра.</p>
+      </div>
+      <div class="topbar-actions">
+        <button class="ghost-btn" id="allCategoriesBtn" type="button">Все категории</button>
+        <button class="ghost-btn" id="editDataBtn" type="button">Как изменить игры?</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <aside class="panel controls-panel">
+        <label class="field-label" for="categorySelect">Категория</label>
+        <select id="categorySelect"></select>
+        <div class="category-count" id="categoryCount"></div>
+
+        <div class="control-row">
+          <label class="toggle">
+            <input id="removeAfterSpin" type="checkbox" />
+            <span class="toggle-ui"></span>
+            <span>Убирать выпавшую игру</span>
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button class="primary-btn" id="spinBtn" type="button">КРУТИТЬ</button>
+          <button class="secondary-btn" id="resetBtn" type="button">СБРОСИТЬ</button>
+        </div>
+
+        <div class="result-card" aria-live="polite">
+          <div class="result-label">Выпало</div>
+          <div class="result-name" id="resultName">—</div>
+          <div class="result-hint" id="resultHint">Здесь появится выбранная игра</div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat"><strong id="totalGames">0</strong><span>игр</span></div>
+          <div class="stat"><strong id="categoryTotal">0</strong><span>в категории</span></div>
+        </div>
+      </aside>
+
+      <section class="wheel-area">
+        <div class="wheel-stage">
+          <div class="pointer" aria-hidden="true"></div>
+          <canvas id="wheel" width="760" height="760" aria-label="Колесо выбора игры"></canvas>
+          <div class="wheel-center">
+            <div class="center-title">ИГРА</div>
+            <div class="center-subtitle">наугад</div>
+          </div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </section>
+    </main>
+
+    <div class="modal hidden" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="modal-card">
+        <button class="modal-close" id="closeModal" type="button" aria-label="Закрыть">×</button>
+        <h2 id="helpTitle">Как изменить игры</h2>
+        <p>Все категории и игры лежат прямо в файле <code>data.js</code>. Для GitHub Pages достаточно заменить массивы внутри объекта <code>GAME_DATA</code>.</p>
+        <pre><code>const GAME_DATA = {
+  "Моя категория": ["Игра 1", "Игра 2", "Игра 3"]
+};</code></pre>
+        <p>После изменения загрузите обновлённые файлы в репозиторий GitHub. Сервер не нужен: сайт полностью статический.</p>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
