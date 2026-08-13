@@ -45,7 +45,7 @@ const GAME_DATA = {
   ],
 
   "Сега": ["sonic frontiers", "якудза 0", "якудза 7", "SHINOBI: Art of Vengeance", "Catherine", "Jet Set Radio"],
-  "Средневековье": ["kingdom: two crowns", "kingdom: two crowns 2", "хогвартс легаси", "готика 1", "плагуе тейл иносенс", "файбл"],
+  "Средневековье": ["kingdom: cd", "kingdom: cd 2", "хогвартс легаси", "готика 1", "плагуе тейл иносенс", "файбл"],
   "Азиатская вкуснятина": ["wukong", "стеллар блэйд", "лайс оф пи", "фёрст берсеркер", "вучанг", "кримсон десерт"],
   "Боевые искусства": ["Сифу", "шенмуе", "инджастис", "мк1", "мк11", "стрит файтер 6"],
   "Интерактивное кино": ["детройт", "лис", "лис 2", "хэви рейн", "бейонд ту соулс", "антил даун"],
@@ -55,7 +55,7 @@ const GAME_DATA = {
   "Платформеры": ["супер мит бой", "селеста", "рейман легендс", "катана зеро", "Sonic Mania", "The End Is Nigh"],
   "Лимбо подобные": ["limbo", "inside", "little nightmares", "reanimal", "little nightmares 2", "Bramble: The Mountain King"],
   "Детектив": ["Blacksad", "Sam & Max", "Мафия 2", "Мафия 1", "Murdered: Soul Suspect", "мафия олд кантри"],
-  "Японские рпг": ["трейлс", "октопат тревелер", "KINGDOM HEARTS -HD 1.5+2.5 ReMIX", "Tales of Vesperia", "зельда ботва", "DRAGON QUEST III"],
+  "Японские рпг": ["трейлс", "октопат тревелер", "KINGDOM HEARTS", "Tales of Vesperia", "зельда ботва", "DRAGON QUEST III"],
   "Европейские рпг": ["Ведьмак 3", "Ведьмак 2", "Киберпанк", "Клэр обскур", "Балдур гейт 3", "драгон эйдж ориджинс"],
   "Аниме": ["Наруто шиппуден", "Tokyo Ghoul", "DRAGON BALL XENOVERSE", "ONE PIECE ODYSSEY", "SAO Fatal Bullet", "STEINS;GATE"],
   "Головоломки": ["The witness", "baba is you", "braid", "the exit 8", "superliminal", "portal 1"]
