@@ -64,7 +64,17 @@
       </section>
     </main>
 
-
+    <div class="modal hidden" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="modal-card">
+        <button class="modal-close" id="closeModal" type="button" aria-label="Закрыть">×</button>
+        <h2 id="helpTitle">Как изменить игры</h2>
+        <p>Все категории и игры лежат прямо в файле <code>data.js</code>. Для GitHub Pages достаточно заменить массивы внутри объекта <code>GAME_DATA</code>.</p>
+        <pre><code>const GAME_DATA = {
+  "Моя категория": ["Игра 1", "Игра 2", "Игра 3"]
+};</code></pre>
+        <p>После изменения загрузите обновлённые файлы в репозиторий GitHub. Сервер не нужен: сайт полностью статический.</p>
+      </div>
+    </div>
 
     <div class="toast" id="toast"></div>
   </div>
