@@ -11,7 +11,6 @@ const categoryTotal = document.getElementById('categoryTotal');
 const totalGames = document.getElementById('totalGames');
 const legend = document.getElementById('legend');
 const toast = document.getElementById('toast');
-const helpModal = document.getElementById('helpModal');
 
 const state = {
   rotation: 0,
@@ -248,9 +247,6 @@ document.getElementById('allCategoriesBtn').addEventListener('click', () => {
   showToast(`Добавлены все игры: ${all.length}`);
 });
 
-document.getElementById('editDataBtn').addEventListener('click', () => helpModal.classList.remove('hidden'));
-document.getElementById('closeModal').addEventListener('click', () => helpModal.classList.add('hidden'));
-helpModal.addEventListener('click', (e) => { if (e.target === helpModal) helpModal.classList.add('hidden'); });
 window.addEventListener('resize', drawWheel);
 
 populateCategories();
