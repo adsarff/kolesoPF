@@ -58,7 +58,7 @@ const GAME_DATA = {
   "Японские рпг": ["трейлс", "октопат тревелер", "KINGDOM HEARTS", "Tales of Vesperia", "зельда ботва", "DRAGON QUEST III"],
   "Европейские рпг": ["Ведьмак 3", "Ведьмак 2", "Киберпанк", "Клэр обскур", "Балдур гейт 3", "драгон эйдж ориджинс"],
   "Аниме": ["Наруто шиппуден", "Tokyo Ghoul", "DRAGON BALL XENOVERSE", "ONE PIECE ODYSSEY", "SAO Fatal Bullet", "STEINS;GATE"],
-  "Головоломки": ["The witness", "baba is you", "braid", "the exit 8", "superliminal", "portal 1"]
+  "Головоломки": ["The witness", "baba is you", "braid", "the exit 8", "superliminal", "portal 1"],
 
   "Любимые игры Сэда": ["рдр 2", "клэр обскур", "фар край 5", "якудза 0", "мафия 2", "киберпанк призрачная свобода"],
   "Любимые игры Жаке": ["античембер", "тлоу2", "валькинг дед дефинитив", "ас бразерхуд", "пе4", "майнкрафт"],
