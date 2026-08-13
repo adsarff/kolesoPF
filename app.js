@@ -3,7 +3,6 @@ const ctx = canvas.getContext('2d');
 const select = document.getElementById('categorySelect');
 const spinBtn = document.getElementById('spinBtn');
 const resetBtn = document.getElementById('resetBtn');
-const removeAfterSpin = document.getElementById('removeAfterSpin');
 const resultName = document.getElementById('resultName');
 const resultHint = document.getElementById('resultHint');
 const categoryCount = document.getElementById('categoryCount');
@@ -200,12 +199,6 @@ function spin() {
       state.spinning = false;
       spinBtn.disabled = false;
       spinBtn.textContent = 'КРУТИТЬ';
-      if (removeAfterSpin.checked) {
-        state.savedData[currentCategory()] = games.filter((_, i) => i !== winner);
-        updateCurrentCategory();
-        buildLegend();
-        if (!state.currentGames.length) showToast('Это была последняя игра в категории.');
-      }
     }
   }
   requestAnimationFrame(frame);
