@@ -227,25 +227,7 @@ select.addEventListener('change', () => {
 });
 spinBtn.addEventListener('click', spin);
 resetBtn.addEventListener('click', reset);
-document.getElementById('allCategoriesBtn').addEventListener('click', () => {
-  const all = Object.values(state.savedData).flat();
-  if (!all.length) return;
-  state.savedData['Все игры'] = all;
-  const opts = Array.from(select.options);
-  if (!opts.some(o => o.value === 'Все игры')) {
-    const o = document.createElement('option');
-    o.value = 'Все игры';
-    o.textContent = `Все игры (${all.length})`;
-    select.appendChild(o);
-  } else {
-    select.querySelector('option[value="Все игры"]').textContent = `Все игры (${all.length})`;
-  }
-  select.value = 'Все игры';
-  state.rotation = 0;
-  updateCurrentCategory();
-  buildLegend();
-  showToast(`Добавлены все игры: ${all.length}`);
-});
+
 
 window.addEventListener('resize', drawWheel);
 
