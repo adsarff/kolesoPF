@@ -49,7 +49,7 @@ function updateCurrentCategory() {
 }
 
 function updateGlobalTotal() {
-  const count = Object.values(state.savedData).reduce((sum, games) => sum + games.length, 0);
+  const count = Object.entries(state.savedData).reduce((sum, [name, games]) => name === 'Все игры' ? sum : sum + games.length, 0);
   totalGames.textContent = fmt(count);
 }
 
